@@ -1,0 +1,30 @@
+
+
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+
+script.
+  var txId = '#{txId}';
+  var db = '#{db}';
+
+  var something = function(text) {
+    //-  $.ajax({
+    //-       url: `http://localhost:3000/v1/bank/payment/${txId}`,
+    //-       type: 'POST',
+    //-       data: {"status":text},
+    //-       success: function(data){
+    //-         console.log(data);    
+    //-       }
+    //-     });
+
+    console.log(db);
+    location.href = db + `?status=${text}`
+  }
+
+
+button(onclick='something("completed")') Success
+button(onclick='something("failed")') reject
+
+  
+  
+
+
