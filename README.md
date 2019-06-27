@@ -2,7 +2,7 @@
 
 This is just to mimic bank response for card gateway.
 
-#USAGE
+# USAGE
 
     npm install
     npm start
