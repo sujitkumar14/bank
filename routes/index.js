@@ -28,6 +28,8 @@ router.get('/bank/payment/:txId',function(req,res){
   res.status(200).send({"status": "completed"});
 });
 
+
+//endpoint is just for payment gateway redirection
 router.get('/payment/:txId', function (req, res, next) {
   let query = req.query['status'];
   console.log(query);
